@@ -1,0 +1,103 @@
+@use "fonts";
+@use "base";
+
+html {
+  font-family: 'TT Norms';
+  font-size: 18px;
+  line-height: 21px;
+
+  h1 {
+    font-size: 42px;
+    line-height: 50px;
+
+    color: base.$main-color-regular;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 38px;
+    color: base.$main-color-regular;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+    color: base.$main-color-regular;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 21px;
+    color: base.$main-color-regular;
+  }
+}
+
+p {
+  color: base.$main-black;
+}
+
+@media (max-width: 568px) {
+  html {
+    font-family: 'TT Norms', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+
+    h1 {
+      font-size: 32px;
+      line-height: 38px;
+
+      color: base.$main-color-regular;
+    }
+
+    h2 {
+      font-size: 22px;
+      line-height: 26px;
+      color: base.$main-color-regular;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 21px;
+      color: base.$main-color-regular;
+    }
+
+    h4 {
+      font-size: 18px;
+      line-height: 21px;
+      color: base.$main-color-regular;
+    }
+  }
+}
+
+a {
+  font-size: 16px;
+  line-height: 20px;
+  color: base.$blue-regular;
+
+  &:hover {
+    color: base.$pink-accent;
+  }
+}
+
+button {
+  @include base.button-regular();
+
+  &:hover {
+    background: base.$blue-hover;
+    box-shadow: 0 0 30px rgba(36, 163, 255, 0.5);
+  }
+
+  &:active {
+    background: base.$blue-active;
+    box-shadow: none;
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+$main-color-regular: #323264;
+$main-color-alt: #46466E;
+$main-color-soft: #686887;
+$main-black: #000000;
+$main-white: white;
+
+$gray-bg: #F5F5FA;
+$gray-text: #B3B3BA;
+
+$blue-regular: #24A3FF;
+$blue-hover: #0085FF;
+$blue-active: #006CCF;
+
+$pink-accent: #F0145A;
+
+
+/*gradients*/
+$gradient-regular: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$gradient-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+$gradient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$gradient-red: linear-gradient(121.42deg, #F0145A 30.65%, #693264 107.33%);
+$gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+
+
+@mixin gradienttext() {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+@mixin button-regular() {
+  background: #24A3FF;
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 16px 16px 17px;
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+  color: var(--main-white);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  @media screen and (min-width: 1024px) {
+    padding: 0 60px;
+  }
+}
+
